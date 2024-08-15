@@ -9,6 +9,7 @@ import RandomColour from './components/randomcolour/RandomColour';
 import Rating from './components/rating/Rating';
 import LoadMore from './components/loadmore/LoadMore';
 import TreeView from './components/treeview/TreeView';
+import Theme from './components/theme/Theme';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -20,7 +21,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/randomcolor" element={<RandomColour />} />
         <Route path="/rating" element={<Rating />} />
         <Route path="/loadmore" element={<LoadMore />} />
-        <Route path="/treeview" element={<TreeView/>}/>
+        <Route path="/treeview" element={<TreeView />} />
+        <Route path="/theme" element={<Theme />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

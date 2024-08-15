@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
-  useEffect(() => {
+  const [darkMode, setDarkMode] = useState(()=>{
     const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setDarkMode(prefersDarkMode);
-  }, []);
+    return prefersDarkMode
+  });
+ 
   const toggleDarkMode = () => setDarkMode(prevMode => !prevMode);
 
   return (
@@ -62,6 +62,12 @@ const App = () => {
               className="bg-fuchsia-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-fuchsia-600 transition-transform transform hover:scale-105"
             >
               Tree View
+            </Link>
+            <Link
+              to="/theme"
+              className="bg-pink-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-pink-600 transition-transform transform hover:scale-105"
+            >
+              Theme Changer
             </Link>
           </div>
         </nav>
