@@ -10,6 +10,7 @@ import Rating from './components/rating/Rating';
 import LoadMore from './components/loadmore/LoadMore';
 import TreeView from './components/treeview/TreeView';
 import Theme from './components/theme/Theme';
+import Todo from './components/todo/Todo';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/loadmore" element={<LoadMore />} />
         <Route path="/treeview" element={<TreeView />} />
         <Route path="/theme" element={<Theme />} />
+        <Route path="/todo" element={<Todo/>}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>,
