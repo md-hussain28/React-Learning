@@ -6,7 +6,7 @@ const List = () => {
      const {todo,addTodo}=useContext(task)
      console.log(todo,addTodo);
      const handleSubmit=(e)=>{
-            preve
+            
               console.log(e);
               
      }
