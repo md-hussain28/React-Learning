@@ -11,10 +11,13 @@ import LoadMore from './components/loadmore/LoadMore';
 import TreeView from './components/treeview/TreeView';
 import Theme from './components/theme/Theme';
 import Todo from './components/todo/Todo';
+import Form from './components/form/Form';
+import Controlled from './components/form/components/Controlled';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+  
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/accordion" element={<Accordion />} />
@@ -25,7 +28,10 @@ createRoot(document.getElementById('root')).render(
         <Route path="/treeview" element={<TreeView />} />
         <Route path="/theme" element={<Theme />} />
         <Route path="/todo" element={<Todo/>}/>
+        <Route path="/form" element={<Form/>}/>
+        <Route path="/form/controlled" element={<Controlled/>}/>
       </Routes>
+
     </BrowserRouter>
   </StrictMode>,
 );
