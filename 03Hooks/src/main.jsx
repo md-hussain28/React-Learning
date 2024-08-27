@@ -7,6 +7,7 @@ import UseMemo from './pages/UseMemo.jsx';
 import UseEffect from './pages/UseEffect.jsx';
 import UseRef from './pages/UseRef.jsx';
 import UseCallback from './pages/UseCallback.jsx';
+import UseCustom from './pages/useCustom.jsx';
 
 createRoot(document.getElementById('root')).render(
 
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/usememo" element={<UseMemo/>} />
         <Route path="/useref" element={<UseRef/>} />
         <Route path="/usecallback" element={<UseCallback/>} />
+        <Route path="/usecustom" element={<UseCustom/>}/>
       </Routes>
     </Router>
 

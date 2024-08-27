@@ -21,6 +21,9 @@ const App = () => {
         <Link to="/usecallback">
           <button className='border-4 border-black px-3 py-1 bg-cyan-500 rounded-lg'>UseCallback</button>
         </Link>
+        <Link to="/usecustom">
+          <button className='border-4 border-black px-3 py-1 bg-cyan-500 rounded-lg'>UseCustom</button>
+        </Link>
       </div>
     </div>
   )
